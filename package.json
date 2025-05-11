@@ -8,6 +8,11 @@
     "test": "jest",
     "server": "node server/index.js"
   },
+ "imports": {
+    "#root/*": {
+        "default": "./src/*"
+     }
+   },
   "type": "commonjs",
   "author": "Chris Scott, Transistor Software",
   "license": "MIT",
