@@ -2,7 +2,7 @@
   "name": "background-geolocation-console",
   "version": "1.0.0",
   "description": "background-geolocation-console",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
     "test": "jest",
