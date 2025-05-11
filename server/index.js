@@ -2,7 +2,7 @@
 
 
 
-import compress from 'compression';
+import compress from './server/compression';
 import express from 'express';
 import morgan from 'morgan';
 import { extname, resolve } from 'path';
