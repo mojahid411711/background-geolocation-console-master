@@ -1,6 +1,6 @@
-/* eslint-disable no-console */
+﻿/* eslint-disable no-console */
 
-import bodyParser from 'body-parser';
+
 import 'colors';
 import compress from 'compression';
 import express from 'express';
@@ -38,8 +38,11 @@ process.on('message', msg => {
 app.disable('etag');
 app.use(morgan(isProduction ? 'short' : 'dev'));
 app.use(compress());
-app.use(bodyParser.json(parserLimits));
-app.use(bodyParser.raw(parserLimits));
+
+
+
+app.use(express.json(parserLimits));
+app.use(express.raw(parserLimits));
 
 ((async () => {
   await initializeDatabase();
