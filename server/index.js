@@ -1,7 +1,7 @@
 ﻿/* eslint-disable no-console */
 
 
-import 'colors';
+
 import compress from 'compression';
 import express from 'express';
 import morgan from 'morgan';
